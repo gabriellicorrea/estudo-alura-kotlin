@@ -11,7 +11,7 @@ fun main() {
     println("nome ${gabi.nome} " )
     println( "cpf  ${gabi.cpf}")
     println( "salario  ${gabi.salario}")
-    println( "bonificacao  ${gabi.bonificacao}")
+    println( "bonificacao  ${gabi.bonificacao()}")
     println("****************************************")
 
     val kaue = Gerente(
@@ -24,9 +24,9 @@ fun main() {
     println("nome ${kaue.nome} " )
     println( "cpf  ${kaue.cpf}")
     println( "salario  ${kaue.salario}")
-    println( "bonificacao  ${kaue.bonificacao}")
+    println( "bonificacao  ${kaue.bonificacao()}")
 
-    println("****************************************")
+
 
     val bia = Diretor(
         nome = "bia",
@@ -39,6 +39,33 @@ fun main() {
     println("nome ${bia.nome} " )
     println( "cpf  ${bia.cpf}")
     println( "salario  ${bia.salario}")
-    println( "bonificacao  ${bia.bonificacao}")
+    println( "bonificacao  ${bia.bonificacao()}")
+
+    println("****************************************")
+
+    val maya = Analista(
+        nome = "maya",
+        cpf = "444.444.444-44",
+        salario = 3000.0
+    )
+
+    println("nome ${maya.nome} " )
+    println( "cpf  ${maya.cpf}")
+    println( "salario  ${maya.salario}")
+    println( "bonificacao  ${maya.bonificacao()}")
+
+    println("****************************************")
+
+    val calculadora = CalculadoraBonificacao()
+    calculadora.registra(gabi)
+    calculadora.registra(kaue)
+    calculadora.registra(bia)
+    calculadora.registra(maya)
+
+
+
+
+
+    println("total de bonificação: ${calculadora.total}")
 
 }
