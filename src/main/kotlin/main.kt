@@ -1,71 +1,29 @@
 fun main() {
+    println("Olá, funcionarios.")
 
-
-    val gabi = Funcionario(
-        nome = "Gabrielli",
-        cpf = "123.567.890.00",
-        salario = 1000.0,
-
+    val contaCorrente = ContaCorrente(
+        titular = "Gabi,",
+        numero = 1000
     )
 
-    println("nome ${gabi.nome} " )
-    println( "cpf  ${gabi.cpf}")
-    println( "salario  ${gabi.salario}")
-    println( "bonificacao  ${gabi.bonificacao()}")
-    println("****************************************")
-
-    val kaue = Gerente(
-        nome = "Kaue",
-        cpf = "009.876.543.21",
-        salario = 2500.0,
-        senha = 1234
+    val contaPoupanca = ContaPoupanca(
+        titular = "Kaue,",
+        numero = 1000
     )
 
-    println("nome ${kaue.nome} " )
-    println( "cpf  ${kaue.cpf}")
-    println( "salario  ${kaue.salario}")
-    println( "bonificacao  ${kaue.bonificacao()}")
+    contaCorrente.deposita(1000.0)
+    contaPoupanca.deposita(1000.0)
+    println("Saldo conta corrente: ${contaCorrente.saldo}")
+    println("Saldo conta poupanca: ${contaPoupanca.saldo}")
 
 
+    contaCorrente.saca(100.0)
+    contaPoupanca.saca(100.0)
 
-    val bia = Diretor(
-        nome = "bia",
-        cpf = "009.876.654.12",
-        salario = 3000.0,
-        senha = 1234,
-        plr = 20.0
-    )
+    println("Saldo apos saque corrente: ${contaCorrente.saldo}")
+    println("Saldo apos saque poupanca: ${contaPoupanca.saldo}")
 
-    println("nome ${bia.nome} " )
-    println( "cpf  ${bia.cpf}")
-    println( "salario  ${bia.salario}")
-    println( "bonificacao  ${bia.bonificacao()}")
-
-    println("****************************************")
-
-    val maya = Analista(
-        nome = "maya",
-        cpf = "444.444.444-44",
-        salario = 3000.0
-    )
-
-    println("nome ${maya.nome} " )
-    println( "cpf  ${maya.cpf}")
-    println( "salario  ${maya.salario}")
-    println( "bonificacao  ${maya.bonificacao()}")
-
-    println("****************************************")
-
-    val calculadora = CalculadoraBonificacao()
-    calculadora.registra(gabi)
-    calculadora.registra(kaue)
-    calculadora.registra(bia)
-    calculadora.registra(maya)
-
-
-
-
-
-    println("total de bonificação: ${calculadora.total}")
-
+    contaCorrente.transfere(100.0, contaPoupanca )
+    println("Saldo corrente apos transferir  ${contaCorrente.saldo}" )
+    println("Saldo poupanca   ${contaPoupanca.saldo}" )
 }

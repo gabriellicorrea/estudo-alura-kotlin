@@ -1,6 +1,6 @@
 package Aula01
 
-class Conta(val titular: String, val numero: Int  ){
+open class Conta(val titular: String, val numero: Int  ){
     var saldo = 0.0
         private set
 
@@ -10,7 +10,7 @@ class Conta(val titular: String, val numero: Int  ){
         }
     }
 
-    fun saca(valor: Double){
+    open fun saca(valor: Double){
         if(saldo >= valor){
             saldo -= valor
         }
