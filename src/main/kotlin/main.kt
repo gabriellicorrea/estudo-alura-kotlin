@@ -1,6 +1,7 @@
-import teste.testaAutenticacao
+import br.com.alura.bytebank.teste.testeSaldo
 
 fun main() {
 print("olaa ")
-    testaAutenticacao()
+    //testaAutenticacao()
+    testeSaldo()
 }

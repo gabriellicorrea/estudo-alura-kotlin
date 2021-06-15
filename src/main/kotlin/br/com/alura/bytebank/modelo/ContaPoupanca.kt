@@ -1,6 +1,6 @@
-package modelo
+package br.com.alura.bytebank.modelo
 
-class ContaCorrente(
+class ContaPoupanca(
     titular: String,
     numero: Int
 ) : Conta(
@@ -9,8 +9,8 @@ class ContaCorrente(
 ) {
     override fun saca(valor: Double) {
         val valorComTaxa =  valor + 0.1
-        if(this.saldo >= valorComTaxa){
-            this.saldo -= valorComTaxa
+        if(this.saldo >= valor){
+            this.saldo -= valor
         }
     }
 }

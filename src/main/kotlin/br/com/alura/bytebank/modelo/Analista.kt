@@ -1,6 +1,6 @@
-package modelo
+package br.com.alura.bytebank.modelo
 
-import teste.Funcionario
+import br.com.alura.bytebank.teste.Funcionario
 
 class Analista(
     nome: String,
