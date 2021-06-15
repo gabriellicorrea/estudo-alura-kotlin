@@ -4,9 +4,10 @@ class Analista(
     salario: Double,
 ) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
 
-    override fun bonificacao(): Double  {
-        return super.bonificacao() + salario * 0.2
-    }
+    override val bonificacao: Double
+        get(){
+            return salario * 0.2
+        }
 
 
 

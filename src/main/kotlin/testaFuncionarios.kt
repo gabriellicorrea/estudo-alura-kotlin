@@ -3,7 +3,7 @@ fun testaFuncionarios() {
     println("****************************************")
 
 
-    val gabi = Funcionario(
+    val gabi = Analista(
         nome = "Gabrielli",
         cpf = "123.567.890.00",
         salario = 1000.0,
@@ -13,7 +13,7 @@ fun testaFuncionarios() {
     println("nome ${gabi.nome} ")
     println("cpf  ${gabi.cpf}")
     println("salario  ${gabi.salario}")
-    println("bonificacao  ${gabi.bonificacao()}")
+    println("bonificacao  ${gabi.bonificacao}")
     println("****************************************")
 
     val kaue = Gerente(
@@ -26,7 +26,7 @@ fun testaFuncionarios() {
     println("nome ${kaue.nome} ")
     println("cpf  ${kaue.cpf}")
     println("salario  ${kaue.salario}")
-    println("bonificacao  ${kaue.bonificacao()}")
+    println("bonificacao  ${kaue.bonificacao}")
 
 
     val bia = Diretor(
@@ -40,7 +40,7 @@ fun testaFuncionarios() {
     println("nome ${bia.nome} ")
     println("cpf  ${bia.cpf}")
     println("salario  ${bia.salario}")
-    println("bonificacao  ${bia.bonificacao()}")
+    println("bonificacao  ${bia.bonificacao}")
 
     println("****************************************")
 
@@ -53,7 +53,7 @@ fun testaFuncionarios() {
     println("nome ${maya.nome} ")
     println("cpf  ${maya.cpf}")
     println("salario  ${maya.salario}")
-    println("bonificacao  ${maya.bonificacao()}")
+    println("bonificacao  ${maya.bonificacao}")
 
     println("****************************************")
 

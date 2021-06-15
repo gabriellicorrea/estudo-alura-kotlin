@@ -1,7 +1,10 @@
 package Aula01
 
+import ContaCorrente
+import ContaPoupanca
+
 fun testaComportamentos() {
-    val contaGabi = Conta("Gabi", 1234)
+    val contaGabi = ContaCorrente("Gabi", 1234)
     contaGabi.deposita(100.0)
     println("Titular da conta: " + contaGabi.titular)
     println("Numero da conta: " + contaGabi.numero)
@@ -9,7 +12,7 @@ fun testaComportamentos() {
 
     println("------------------------------------------------")
 
-    val contaKaue = Conta("Kaue", 4321)
+    val contaKaue = ContaPoupanca("Kaue", 4321)
 
     contaKaue.deposita(200.0)
     println("Titular da conta: " + contaKaue.titular)
