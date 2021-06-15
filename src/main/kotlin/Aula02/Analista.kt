@@ -1,3 +1,5 @@
+package Aula02
+
 class Analista(
     nome: String,
     cpf: String,

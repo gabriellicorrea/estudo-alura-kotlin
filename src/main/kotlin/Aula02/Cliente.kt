@@ -1,3 +1,5 @@
+package Aula02
+
 class Cliente(
     val nome: String,
     val cpf: String,

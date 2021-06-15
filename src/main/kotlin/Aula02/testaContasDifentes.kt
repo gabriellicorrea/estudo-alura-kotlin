@@ -1,3 +1,5 @@
+package Aula02
+
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
         titular = "Gabi,",

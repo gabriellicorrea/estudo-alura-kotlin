@@ -1,4 +1,4 @@
-
+package Aula02
 class Gerente(
     nome: String,
     cpf: String,

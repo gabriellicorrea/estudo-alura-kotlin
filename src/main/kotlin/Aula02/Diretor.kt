@@ -1,3 +1,5 @@
+package Aula02
+
 class Diretor(
     nome: String,
     cpf: String,

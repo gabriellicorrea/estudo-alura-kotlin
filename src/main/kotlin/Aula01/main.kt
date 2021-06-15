@@ -1,16 +1,12 @@
 package Aula01
 
-import Diretor
-import Gerente
-import SistemaInterno
-import testaAutenticacao
-import testaFuncionarios
+import Aula02.testaAutenticacao
 
 fun main() {
     println("hello word")
 
     testaAutenticacao()
-    //testaFuncionarios()
+    //Aula02.testaFuncionarios()
 }
 
 

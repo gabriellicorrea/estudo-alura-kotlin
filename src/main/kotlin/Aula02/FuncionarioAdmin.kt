@@ -1,3 +1,5 @@
+package Aula02
+
 abstract class FuncionarioAdmin(
       nome: String,
      cpf: String,

@@ -1,3 +1,5 @@
+package Aula02
+
 class CalculadoraBonificacao {
 
     var total: Double = 0.0

@@ -1,3 +1,5 @@
+package Aula02
+
 class Auxiliar(
     nome: String,
     cpf: String,

@@ -1,3 +1,5 @@
+package Aula02
+
 class SistemaInterno {
 
     fun entra(admin: Autenticavel, senha: Int) {

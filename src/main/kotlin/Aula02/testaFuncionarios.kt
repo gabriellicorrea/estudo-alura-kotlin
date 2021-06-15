@@ -1,3 +1,5 @@
+package Aula02
+
 fun testaFuncionarios() {
     println(" ")
     println("****************************************")

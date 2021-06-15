@@ -1,7 +1,7 @@
 package Aula01
 
-import ContaCorrente
-import ContaPoupanca
+import Aula02.ContaCorrente
+import Aula02.ContaPoupanca
 
 fun testaComportamentos() {
     val contaGabi = ContaCorrente("Gabi", 1234)

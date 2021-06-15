@@ -1,3 +1,5 @@
+package Aula02
+
 import Aula01.Conta
 
 class ContaCorrente(

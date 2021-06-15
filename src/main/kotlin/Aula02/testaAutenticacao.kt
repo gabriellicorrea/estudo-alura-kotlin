@@ -1,3 +1,5 @@
+package Aula02
+
 fun testaAutenticacao() {
     val gerente = Gerente(
         nome = "Alex",
